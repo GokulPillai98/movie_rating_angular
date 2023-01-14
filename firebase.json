@@ -1,7 +1,7 @@
 {
   "hosting": {
     "site": "angularmoviecollection",
-    "public": "dist/movierating",
+    "public": "dist/movie_rating_angular",
     "ignore": [
       "firebase.json",
       "**/.*",
