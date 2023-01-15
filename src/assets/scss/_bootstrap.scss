@@ -1,4 +1,4 @@
-
+@import './variables';
   img {
     vertical-align: middle;
     border-style: none;
@@ -4907,7 +4907,7 @@
     height: 1rem;
     overflow: hidden;
     font-size: 0.75rem;
-    background-color: #e9ecef;
+    background-color: $secondary-color;
     border-radius: 0.25rem;
   }
   

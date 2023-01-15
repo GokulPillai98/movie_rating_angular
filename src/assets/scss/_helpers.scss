@@ -1,3 +1,4 @@
+@import './variables';
 .addLoader {
   position: relative;
   z-index: 6;
@@ -50,7 +51,7 @@
 }
 
 .cdk-overlay-dark-backdrop{
-  background: #000c;
+  background: $base-bg;
 }
 
 .cross-icon{
@@ -60,11 +61,11 @@
 
 .mat-tab-label.mat-tab-label-active {
   background-color: transparent;
-  color: #fff;
+  color: $text-color;
 }
 
 .mat-ink-bar {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid $secondary-color;
 }
 
 
@@ -110,11 +111,11 @@
 // }
 
 .ui-carousel-prev, .ui-carousel-next{
-  background-color: $secondary-color !important;
+  background-color: inherit !important;
   color: $text-color !important;
   border-radius: 1px !important;
   opacity: 1;
-  border: 1px solid $secondary-color !important;
+  border: 0 !important;
   &:focus{
     outline: none !important;
     box-shadow: none !important

@@ -13,6 +13,7 @@ export class MoviesComponent implements OnInit {
   loader = true;
   totalResults: any;
   total_results: any;
+  currentPage: number = 0;
   searchRes: any;
   searchStr: string;
 
@@ -38,6 +39,7 @@ export class MoviesComponent implements OnInit {
 
   ngOnInit() {
     this.getTopRatedMovies(1);
+    this.currentPage = 0;
   }
 
   getTopRatedMovies(page: number) {
@@ -52,6 +54,7 @@ export class MoviesComponent implements OnInit {
   changePage(event) {
     this.loader = true;
     this.getTopRatedMovies(event.pageIndex + 1);
+    this.currentPage = event.pageIndex ;
   }
 
   searchMovies() {

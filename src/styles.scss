@@ -12,3 +12,11 @@
 @import '../src/assets/scss/overview';
 @import '../src/assets/scss/videos';
 @import '../src/assets/scss/image';
+@import '../src/assets/scss/search';
+@import '../src/assets/scss/pagination';
+
+app-root {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}

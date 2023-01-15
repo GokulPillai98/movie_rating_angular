@@ -10,7 +10,7 @@
         </a>
     </div>
     
-    <app-skeleton *ngIf="loader" ></app-skeleton>
+    <app-skeleton *ngIf="loader"></app-skeleton>
     <p-carousel [value]="nowPlaying" [numVisible]="6" [numScroll]="4" [circular]="false" *ngIf="!loader"
         [responsiveOptions]="responsiveOptions">
         <ng-template let-movie pTemplate="item">

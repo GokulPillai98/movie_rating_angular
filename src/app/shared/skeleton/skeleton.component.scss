@@ -1,4 +1,12 @@
+@import '../../../assets/scss/variables';
+
+.loader-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .item-with-background {
-    background: #121212;
+    background-color: $primary-color;
     padding: 10px;
   }

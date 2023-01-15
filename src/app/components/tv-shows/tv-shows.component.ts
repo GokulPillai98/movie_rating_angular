@@ -16,6 +16,7 @@ export class TvShowsComponent implements OnInit {
   total_results: any;
   searchRes: any;
   searchStr: string;
+  currentPage: number = 0;
 
   constructor(
     private tvService: TvService
@@ -41,6 +42,7 @@ export class TvShowsComponent implements OnInit {
 
   ngOnInit() {
     this.TopRatedTVShows(1);
+    this.currentPage = 0;
   }
 
   TopRatedTVShows(page: number) {
@@ -54,10 +56,11 @@ export class TvShowsComponent implements OnInit {
 
   changePage(event) {
     this.TopRatedTVShows(event.pageIndex + 1);
-    this.loader = false;
+    this.currentPage = event.pageIndex;
+    this.loader = true;
   }
 
-  searchMovies() {
+  searchTv() {
     this.tvService.searchtv(this.searchStr).subscribe(res => {
       this.searchRes = res.results;
     });

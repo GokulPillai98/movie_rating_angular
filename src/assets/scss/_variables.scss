@@ -1,22 +1,25 @@
 $font-family--sans-serif:  Nunito, sans-serif;
 $font-family-serif-dosis: Dosis, sans-serif;
 
-
-$base-font-size: 62.5%;
-$base-line-height: 1.6;
-$base-bg: #141414;
-$base-font-color: #fff;
-$anchor-font-color: #dc4666;
-$base-font-family: $font-family--sans-serif;
-$base-font-weight: 400;
-
 $letter-spacing: 0.4px;
 $text-color-grey: #abb7c4;
 
-$primary-color: #2196f3;
-// $secondary-color: #202124;
-$secondary-color: #dc4666;
-$text-color: #fafafa;
+$primary-color: #4C4D5D;
+// $secondary-color: #F77E72;
+$secondary-color: #FFFEFD;
+$tertiary-color: #F77E72;
+$text-color: #FFFEFD;
+
+
+$base-font-size: 62.5%;
+$base-line-height: 1.6;
+$base-bg: $primary-color;
+$base-font-color: $text-color;
+$anchor-font-color: #7B686D;
+$base-font-family: $font-family--sans-serif;
+$base-font-weight: 400;
+
+$input-height: 44px;
 
 $breakpoint-xsmall: 640px;
 $breakpoint-small: 768px;

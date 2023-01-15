@@ -49,13 +49,14 @@
   
   
   .listing-item-style {
-    background-color: #212121;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: $base-bg;
+    border: 1px solid $secondary-color;
     color: $base-font-color;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 11px 5px 11px;
     position: relative;
     cursor: pointer;
+    overflow: hidden;
   
     &:focus {
       outline-style: none;
@@ -71,11 +72,10 @@
     h6 {
       font-size: 14px;
       overflow: hidden;
-      margin: 5px 4px;
       text-transform: uppercase;
       font-family: Dosis, sans-serif;
       font-weight: 700;
-      padding: 2px 2px;
+      padding:7px 6px;
       color: $base-font-color;
       width: auto;
       white-space: nowrap;
@@ -115,7 +115,7 @@
       padding: 1px 7px;
       border-radius: 5px;
       top: auto;
-      bottom: 21px;
+      bottom: 40px;
       color: #fff;
       pointer-events: none;
       font-size: 14px;
@@ -152,8 +152,8 @@
     font-family: Dosis, sans-serif;
     font-size: 14px;
     font-weight: 700;
-    color: #fff;
-    background-color: $secondary-color;
+    color: $text-color;
+    background-color: $primary-color;
     padding: 8px 15px;
     z-index: 2;
     width: 120px;
